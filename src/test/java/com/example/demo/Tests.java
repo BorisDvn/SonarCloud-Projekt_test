@@ -26,7 +26,7 @@ class Tests {
 	}
 
 	@Test
-	public void exampleTest() throws Exception {
+	void exampleTest() throws Exception {
 		this.mvc.perform(get("/")).andExpect(status().isOk())
 				.andExpect(content().string("Greetings from Spring Boot!"));
 	}
